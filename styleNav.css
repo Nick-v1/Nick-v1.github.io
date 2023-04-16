@@ -25,17 +25,17 @@
 	margin-bottom: 10px;
 }
 .navigation li a{
-	color:#53b7ff;
+	color:#ece9f1;
 	text-decoration:none;
 	display:block;
 	padding:8px;
 	font-weight: bold;
 }
 .navigation li:hover{
-	background-color:rgb(92, 51, 21);
+	background-color:rgb(43, 10, 161);
 }
 .navigation li.active a{
-	background-color:indianred;
+	background-color:rgb(51, 95, 153);
 	
 }
 
