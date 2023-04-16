@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nick" />
+    <meta name="description" content="My personal page" />
+
+    <link rel="icon" href="./whirling.gif" />
+    <link href="backgrcs.css" rel="stylesheet" type="text/css" />
+    <!--background css -->
+    <link href="styleIndex.css" rel="stylesheet" type="text/css" />
+    <!--base style css -->
+    <link href="styleNav.css" rel="stylesheet" type="text/css" />
+    <!--nav css -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- nav menu font style-->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=MedievalSharp"
+      rel="stylesheet"
+    />
+    <!-- font for time-->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez"
+      rel="stylesheet"
+    />
+    <!-- font used for .randomQuote and #firstCreated-->
+
+    <script src="main.js"></script>
+    <script>
+      window.onload = myTime();
+      window.onload = getNewQuote();
+    </script>
+
+    <title>Nikolaos Voulgaridis - Home</title>
+  </head>
+  <body>
+    <!--<div class="back"></div> -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="navigation">
+      <ul>
+        <li class="active"><a href="./index.html">Home</a></li>
+
+        <li class="disabled"><a href="./aboutMe/aboutMe.html">About Me</a></li>
+        <li class="disabled">
+          <a href="./interests/interests.html">Interests</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="_time">Time will appear shortly</div>
+
+    <div id="mainPart">
+      <div id="mainPart2"><h2>Welcome to my awesome page!</h2></div>
+      <div id="mainPart1">
+        <h3>
+          Hello my name is Nikos. I'm mostly interested in Back-end
+          Development!&#x2615;
+        </h3>
+      </div>
+      <div class="randomQuote" id="randomQuote"></div>
+      <!-- Random quote provided by api.quotable.io-->
+    </div>
+
+    <div id="firstCreated">This site was first created @ 2017.</div>
+  </body>
+</html>
