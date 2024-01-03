@@ -1,0 +1,44 @@
+body {
+   background-color: #1f2126; /* Dark background color */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   color: #333; /* Dark text color */
+   font-family: 'Roboto', sans-serif;
+}
+
+.message-box {
+   background-color: #2a2d35;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the box shadow */
+   transition: transform 0.3s ease-in-out;
+}
+
+.message-box:hover {
+   transform: scale(1.05); /* Adjust the scale factor for the hover effect */
+}
+
+.message {
+   font-size: 1.5em;
+   color: #00aaff; /* Adjust the color to make it stand out */
+   letter-spacing: 1px;
+   animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+ 0% {opacity: 0;}
+ 100% {opacity: 1;}
+}
+
+.sub-message {
+   margin-top: 10px;
+   font-size: 1.2em;
+   color: crimson; /* White text color for better contrast */
+   font-size: 1.5em;
+   letter-spacing: 1px;
+   animation: fadeIn 4s ease-in;
+}
