@@ -24,7 +24,7 @@ body {
 
 .message {
    font-size: 1.5em;
-   color: #00aaff; /* Adjust the color to make it stand out */
+   color: rgb(170, 234, 250); /* Adjust the color to make it stand out */
    letter-spacing: 1px;
    animation: fadeIn 2s ease-in;
 }
@@ -36,9 +36,15 @@ body {
 
 .sub-message {
    margin-top: 10px;
+   font: bold;
    font-size: 1.2em;
-   color: crimson; /* White text color for better contrast */
+   color: rgb(170, 234, 250); /* White text color for better contrast */
    font-size: 1.5em;
    letter-spacing: 1px;
    animation: fadeIn 4s ease-in;
+}
+
+span{
+   color:crimson;
+   font-size: 1.0em;
 }
