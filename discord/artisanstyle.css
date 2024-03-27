@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111; /* slight dark background */
+    overflow: hidden; /* hides overflow content */
+}
+
+main {
+    flex: 1;
+}
+
+.bot-section {
+    text-align: center; /* Center-align content within the bot section */
+}
+
+@keyframes border-color-change {
+    0% { border-color: red; }
+    20% { border-color: orange; }
+    40% { border-color: yellow; }
+    60% { border-color: green; }
+    80% { border-color: blue; }
+    100% { border-color: indigo; }
+}
+
+.bot-container {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image stays within the circular frame */
+    margin: 50px auto 0; /* Center the container horizontally */
+    border: 2px solid rgb(255, 255, 255); /* Initial border color */
+    animation: border-color-change 5s linear infinite; /* Animation for border color change */
+}
+
+.bot-image {
+    display: block;
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.bot-section p {
+    margin-top: 20px; /* Add some space between the bot image and the paragraph */
+}
+
+.bot-section p a {
+    margin-top: 20px; /* Add some space between the bot image and the link */
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Add emphasis to the text */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.bot-section p a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 2px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.legal {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Adjust margin to separate from social media icons */
+}
+
+.legal li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.legal li:last-child {
+    margin-right: 0;
+}
+
+.legal li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1920px){
+	
+	@keyframes move-twink-back {
+		from {background-position:0 0;}
+		to {background-position:-10000px 5000px;}
+	}
+	@-webkit-keyframes move-twink-back {
+		from {background-position:0 0;}
+		to {background-position:-10000px 5000px;}
+	}
+	@-moz-keyframes move-twink-back {
+		from {background-position:0 0;}
+		to {background-position:-10000px 5000px;}
+	}
+	@-ms-keyframes move-twink-back {
+		from {background-position:0 0;}
+		to {background-position:-10000px 5000px;}
+	}
+	
+	.stars, .twinkling {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		width:100%;
+		height:100%;
+		display: block;
+		
+	}
+	.stars{
+		background:#000 url(stars.png) repeat top center;
+		z-index: -1;
+	}
+	.twinkling{
+		background:transparent url(twinkling.png) repeat top center;
+		z-index: -1;
+	  
+		-moz-animation:move-twink-back 200s linear infinite;
+		-ms-animation:move-twink-back 200s linear infinite;
+		-o-animation:move-twink-back 200s linear infinite;
+		-webkit-animation:move-twink-back 200s linear infinite;
+		animation:move-twink-back 200s linear infinite;
+	}
+
+    
+}
