@@ -54,10 +54,7 @@ main {
 }
 
 .bot-section p a:hover {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: aquamarine;
-    text-decoration-thickness: 2px;
+    color: red; /* Change the color to red on hover */
 }
 
 footer {
